@@ -58,3 +58,21 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Bristol");
+
+let forecast = document.querySelector("#forecast");
+
+forecast.innerHTML = `<div class="row">
+          <div class="col 2">
+            <div class="weather-forecast-date"></div>
+            Thursday
+          </div>
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+            alt=""
+            width="42"
+          />
+          <div class="weather-forecast-temperature">
+            <span class="weather-forecast-temperature-max">18&#176;</span>
+            <span class="weather-forecast-temperature-min">12&#176;</span>
+          </div>
+        </div>`;
